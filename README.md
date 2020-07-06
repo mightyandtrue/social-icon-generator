@@ -1,1 +1,1 @@
-# social-icon-generator
+# Social Icon Generator
