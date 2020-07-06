@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>SVG Generator</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body class="sidebar-closed">
+
+<section id="sidebar">
+    <div id="color-pickers-wrapper">
+        <div id="color-pickers-inner-wrapper">
+
+            <!-- color picker -->
+            <div id="color-picker">
+                <div>choose color</div>
+                <div id="color-picker-inner-wrapper"></div>
+            </div>
+            
+            <!-- hover color picker -->
+            <div id="hover-picker">
+                <div id="hover-color-text">
+                    hover color
+                    <span id="hover-color-sub-text">
+                        HTML
+                        <br />
+                        only
+                    </span>
+                </div>
+                <div id="hover-picker-inner-wrapper"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="filters-wrapper" class="full-width">
+        
+        <label for="input-all">All</label>
+        <input type="checkbox" id="input-all" data-style="all" checked  />
+        
+        <label for="input-basic">Basic</label>
+        <input type="checkbox" id="input-basic" data-style="basic"  />
+        
+        <label for="input-square">Square</label>
+        <input type="checkbox" id="input-square" data-style="square" />
+        
+        <label for="input-circle">Circle</label>
+        <input type="checkbox" id="input-circle" data-style="circle" />
+    </div>
+</section>
+
+
+<section id="content-wrapper" class="full-width">
+    <h1>Choose your colors.<br />Download your social icons.</h1>
+
+    <!-- loaded dynamically via icons.js -->
+    <div id="social-icons" class="full-width"></div>
+</section>
+
+
+<script src="./jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/canvg@3.0.4/lib/umd.js"></script>
+<script src="./icons.js"></script>
+<script src="./scripts.js"></script>
+</body class="sidebar-closed">
+</html>
